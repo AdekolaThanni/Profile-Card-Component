@@ -1,0 +1,57 @@
+.card {
+    max-width: 30rem;
+    margin: 10rem auto 5rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 12rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.5rem;
+
+    &__image {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 100%;
+        border: 1px solid white;
+    }
+
+    &__profile {
+        margin-top: 2rem;
+    }
+
+    &__heading {
+        font-size: 1.5rem;
+        margin-right: .5rem;
+        margin-bottom: .2rem;
+        color: $very-dark-desaturated-blue;
+    }
+
+    &__text {
+        color: $dark-gray;
+    }
+
+    &__stats {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 2rem 0;
+        border-top: 1px solid $dark-gray;
+        margin-top: 2rem;
+
+        & .card__heading {
+            margin-right: 0;
+        }
+        
+        & .card__text {
+            letter-spacing: .15rem;
+            font-size: 1rem;
+        }
+    }
+}
